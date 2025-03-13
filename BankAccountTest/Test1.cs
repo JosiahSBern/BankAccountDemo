@@ -19,7 +19,9 @@ public sealed class Test1
 
 
         // Assert
-        double actual 
+        decimal actual = account.Balance;
+         Assert.AreEqual(expected, actual, 0.001m, "Account not debited correctly");
+    
 
 
     }
